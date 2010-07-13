@@ -127,7 +127,7 @@ if($goal_month < 0){
 
 								<h3><img src="images/h_nowData.gif" alt="現在の状況" width="110" height="22" /></h3>
 
-								<p><a href="goal/index.php">目標設定の編集</a></p>
+								<p><a href="goal/index.php">更新目標の編集</a></p>
 
 							</div>
 
