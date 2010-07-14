@@ -75,7 +75,7 @@ $result = call_data($retu,$table,$rule);
 
 					<form action="#" method="post" id="searchBox" style="margin-left:10px; margin-bottom:15px;">
 
-						<dt><label for="keyword">キーワード</label>　<small><input id="keyword" name="keyword" type="text" />　<input id="pora1" type="radio" name="pora" checked="checked" /><label for="pora1">部分一致</label>　<input id="pora2" type="radio" name="pora" /><label for="pora2">全文一致</label>　<input id="oora1" type="radio" name="oora" checked="checked" /><label for="oora1">OR</label>　<input id="oora2" type="radio" name="oora" /><label for="oora2">AND</label></small></dt>
+						<dt><label for="keyword">キーワード</label><small><input id="keyword" name="keyword" type="text" />　<input id="oora1" type="radio" name="oora" checked="checked" /><label for="oora1">OR</label>　<input id="oora2" type="radio" name="oora" /><label for="oora2">AND</label></small></dt>
 
 						<div id="toggleArea" style="display:none">
 							<dt style="margin-top:10px;">カテゴリー
