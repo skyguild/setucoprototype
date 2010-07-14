@@ -44,19 +44,18 @@ $row_site = site_data();
 					
 
 <div style="margin-left:15px;">
-				<p style="margin-bottom:10px;">表示:　<input type="checkbox" checked="checked" />ファイル名　<input type="checkbox" checked="checked" />パス　<input type="checkbox" checked="checked" />ページ数</p>
 					
-				<p><a id="plus" href="#" onclick="toggle(1);">+</a><a id="minuse" style="display:none;" href="#" onclick="toggle(0);">-</a>　トップ [/] <a href="all.php">（43）</a></p>
+				<p><a id="plus" href="#" onclick="toggle(1);">+</a><a id="minuse" style="display:none;" href="#" onclick="toggle(0);">-</a>　トップ <a href="all.php">（43）</a></p>
 				<div id="toggleArea" style="display:none;">
-				<p>　<a href="">-</a>　└サブカテゴリー1 [/sub1/] <a href="all.php">（20）</a></p>
-				<p>　　<a href="">+</a>　└サブカテゴリー1-1 [/sub1/sub11/] <a href="all.php">（15）</a></p>
-				<p>　　<a href="">-</a>　└サブカテゴリー1-2 [/sub1/sub12/] <a href="all.php">（5）</a></p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">今日は電設部の勉強会</a> [/sub1/sub11/page.php?id=66]</p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">ガンブラー対策について</a> [/sub1/sub11/page.php?id=66]</p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">語る夕べ～先生、彼らは誰ですか？～</a> [/sub1/sub11/page.php?id=66]</p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">電設部とは</a> [/sub1/sub11/page.php?id=66]</p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">技能五輪全国大会レポート</a> [/sub1/sub11/page.php?id=66]</p>
-				<p>　<a href="">+</a>　└サブカテゴリー2 [/sub2/] <a href="all.php">（23）</a></p>
+				<p>　<a href="">-</a>　└サブカテゴリー1 <a href="all.php">（20）</a></p>
+				<p>　　<a href="">+</a>　└サブカテゴリー1-1 <a href="all.php">（15）</a></p>
+				<p>　　<a href="">-</a>　└サブカテゴリー1-2 <a href="all.php">（5）</a></p>
+				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">今日は電設部の勉強会</a> </p>
+				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">ガンブラー対策について</a> </p>
+				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">語る夕べ～先生、彼らは誰ですか？～</a> </p>
+				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">電設部とは</a> </p>
+				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">技能五輪全国大会レポート</a> </p>
+				<p>　<a href="">+</a>　└サブカテゴリー2 <a href="all.php">（23）</a></p>
 				</div>
 </div>
 
