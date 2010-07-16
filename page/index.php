@@ -75,9 +75,21 @@ $result = call_data($retu,$table,$rule);
 
 					<form action="#" method="post" id="searchBox" style="margin-left:10px; margin-bottom:15px;">
 
-						<dt><label for="keyword">キーワード</label><small><input id="keyword" name="keyword" type="text" />　<input id="oora1" type="radio" name="oora" checked="checked" /><label for="oora1">OR</label>　<input id="oora2" type="radio" name="oora" /><label for="oora2">AND</label></small></dt>
+						<dt>
+                            <label for="keyword">キーワード</label>
+                            <small>
+                                <input id="keyword" name="keyword" type="text" />　
+                                <input id="oora1" type="radio" name="oora" checked="checked" /><label for="oora1">OR</label>
+                                <input id="oora2" type="radio" name="oora" /><label for="oora2">AND</label>
+                                <input id="qora1" type="checkbox" name="qora" /><label for="qora1">タイトル</label>
+                                <input id="qora2" type="checkbox" name="qora" /><label for="qora2">本文</label>
+                                <input id="qora3" type="checkbox" name="qora" /><label for="qora3">概要</label>
+                                <input id="qora4" type="checkbox" name="qora" /><label for="qora4">キーワード</label>
+                                <input id="qora5" type="checkbox" name="qora" /><label for="qora5">タグ</label>
+                            </small>
+                        </dt>
 
-						<div id="toggleArea" style="display:none">
+						<div id="toggleArea">
 							<dt style="margin-top:10px;">カテゴリー
 								<select>
 									<option value="0" selected="selected">-- 指定なし --</option>
@@ -101,93 +113,8 @@ $result = call_data($retu,$table,$rule);
 									<option value="2">非公開</option>
 								</select>
 							</dt>
-
-							<dd style="margin-top:10px;"><input type="radio" id="day1" name="day" checked="checked" /><label for="day1">制作日</label>　<input type="radio" id="day2" name="day" /><label for="day2">更新日</label>
-								<select>
-									<?php
-									$i=0;
-									for($i=2010;$i>=1910;$i--){
-										print("<option value='{$i}'");
-										if($i==2009){
-											print(" selected='selected'");
-										}
-										print(">{$i}</option>");
-									}
-									?>
-								</select>
-								年
-								<select>
-									<?php
-									$i=0;
-									for($i=1;$i<=12;$i++){
-										print("<option value='{$i}'");
-										if($i==9){
-											print(" selected='selected'");
-										}
-										print(">{$i}</option>");
-									}
-									?>
-								</select>
-								月
-								<select>
-									<?php
-									$i=0;
-									for($i=1;$i<=31;$i++){
-										print("<option value='{$i}'");
-										if($i==18){
-											print(" selected='selected'");
-										}
-										print(">{$i}</option>");
-									}
-									?>
-								</select>
-								日
-								&nbsp;～&nbsp;
-								<select>
-									<?php
-									$i=0;
-									for($i=2010;$i>=1910;$i--){
-										print("<option value='{$i}'");
-										if($i==2010){
-											print(" selected='selected'");
-										}
-										print(">{$i}</option>");
-									}
-									?>
-								</select>
-								年
-								<select>
-									<?php
-									$i=0;
-									for($i=1;$i<=12;$i++){
-										print("<option value='{$i}'");
-										if($i==6){
-											print(" selected='selected'");
-										}
-										print(">{$i}</option>");
-									}
-									?>
-								</select>
-								月
-								<select>
-									<?php
-									$i=0;
-									for($i=1;$i<=31;$i++){
-										print("<option value='{$i}'");
-										if($i==20){
-											print(" selected='selected'");
-										}
-										print(">{$i}</option>");
-									}
-									?>
-								日
-								</select>
-							</dd>
-
-							<p style="margin-top:15px;"><input type="button" value="検索" /><a href="#" onclick="toggle();"><small>オプションを隠す</small></a></p>
+							<p style="margin-top:15px;"><input type="button" value="検索" /></p>
 						</div>
-
-						<p id="toggleBtn" style="margin-top:5px;"><input type="button" value="検索" /><a href="#" onclick="toggle();"><small>オプションを表示</small></a></p>
 
 					</form>
 
