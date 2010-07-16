@@ -62,7 +62,7 @@ if($_SESSION["message"]){
 
                         <dl id="inputArea">
 
-                            <dt><label for="upload_img">アップロード</label>（現在の日時でファイル名をつけます）<span class="attentionMessage">※「アップできるファイルは、1ファイル**KBまでです。」</span></dt>
+                            <dt><label for="upload_img">アップロード</label>（現在の日時でファイル名をつけます）<span class="attentionMessage">※「アップロードできるファイルは、1ファイル**KBまでです。」</span></dt>
                                 <dd class="upload"><input type="file" name="upload_img" id="upload_img" size="55" /></dd>
                                 <dd class="upload"><input type="submit" class="upSub" id="up" name="up" value="アップロード" /></dd>
 								<dd style="clear:both;"><a href="detail/index.php">詳細アップロード</a>（複数アップロード、ファイル名や説明の入力ができます）</dd>
@@ -78,7 +78,7 @@ if($_SESSION["message"]){
 									<th scope="col" width="20%" id="tableFirst">表示</th>
 									<th scope="col" width="40%">ファイル名<a href="#" title="降順に並び替え">▼</a><a href="#" title="昇順に並び替え">▲</a></th>
 									<th scope="col" width="13%">更新日<a href="#" title="降順に並び替え">▼</a><a href="#" title="昇順に並び替え">▲</a></th>
-									<th scope="col" width="13%">アップ日<a href="#" title="降順に並び替え">▼</a><a href="#" title="昇順に並び替え">▲</a></th>
+									<th scope="col" width="13%">アップロード日<a href="#" title="降順に並び替え">▼</a><a href="#" title="昇順に並び替え">▲</a></th>
 									<th scope="col" width="7%">編集</th>
 									<th scope="col" width="7%">削除</th>
 								</tr>
@@ -147,7 +147,7 @@ if($_SESSION["message"]){
 				
 <script>
 
-</script>
+</script>アップロード、ファイル、タイトル編集すると更新
 
 <?php
     //フッター
