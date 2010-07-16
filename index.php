@@ -179,7 +179,7 @@ if($goal_month < 0){
 
 					<div class="hArea">
 
-						<h3 id="recentry"><img src="images/h_recentlyPage.gif" alt="最近作ったページ" width="150" height="23" /></h3>
+						<h3 id="recentry"><img src="images/h_recentlyPage.gif" alt="最近作ったページ" width="150" height="23" />（5件）</h3>
 
 						<p><a href="/page/index.php">ページの一覧（編集・削除）へ</a></p>
 
