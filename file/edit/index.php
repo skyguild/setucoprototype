@@ -59,6 +59,7 @@ if($_SESSION["message"]){
                                 <dd><a href="#"><img src="../../images/logo.jpg" width="152" height="39" /></a></dd>
                                 <dd>ファイル名:<input type="text" id="file_name" name="file_name" value="200100613.jpg" /></dd>
                                 <dd>説明:<input type="text" id="file_name" name="file_name" value="テキストテキスト" /></dd>
+                                <dd class="upload">ファイル:<input type="file" name="upload_img" id="upload_img" size="55" /></dd>
                             <dt><span class="attentionMessage">**MB</span></dt>
 
                                 <dd ><input type="submit" class="upSub" id="up" name="up" value="編集を保存する" /></dd>
