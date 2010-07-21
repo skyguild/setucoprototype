@@ -21,13 +21,13 @@ $row = mysql_fetch_array($result);
 
 <?php
 	include("../common/header.php");
-	headerArea("目標設定の編集:SetucoCMS",$row_site,$login_name);
+	headerArea("更新目標の編集:SetucoCMS",$row_site,$login_name);
 ?>
 
                 <!-- topicPath START -->
                 <div id="topicPath">
                     <p><a href="../index.php">トップ</a><img src="../images/topicPath.gif" width="6" height="11" alt="の中の" /></p>
-                    <p>目標設定の編集</p>
+                    <p>更新目標の編集</p>
                 </div>
                 <!-- topicpath END -->
 
@@ -40,7 +40,7 @@ $row = mysql_fetch_array($result);
 
                             <div id="topichArea">
 
-                                <h3><img src="../images/h_goal.jpg" width="109" height="18" alt="目標設定の編集" /></h3>
+                                <h3><img src="../images/h_goal.jpg" width="109" height="18" alt="更新目標の編集" /></h3>
 
                             </div>
 
@@ -70,7 +70,7 @@ $row = mysql_fetch_array($result);
 
                         </dl>
 
-                        <p class="editAreaP"><input type="submit" id="sub" name="sub" value="目標設定を変更" /></p>
+                        <p class="editAreaP"><input type="submit" id="sub" name="sub" value="更新目標を変更" /></p>
 
                     </form>
 

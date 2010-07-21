@@ -17,9 +17,9 @@ $rule = "";
 $result = update($table,$value,$rule);
 
 if(isset($result)){
-    $_SESSION["message"] = "<p>目標設定を変更しました。</p>";
+    $_SESSION["message"] = "<p>更新目標を変更しました。</p>";
 } else {
-    $_SESSION["message"] = "<p>目標設定の変更に失敗しました。</p>";
+    $_SESSION["message"] = "<p>更新目標の変更に失敗しました。</p>";
 }
 
 url_get("index.php");
