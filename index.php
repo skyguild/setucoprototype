@@ -33,7 +33,7 @@ $result_page = call_data("*","page"," ORDER BY page_date DESC LIMIT 0,5");
 $result_all_page = call_data("page_id","page","");
 $num_page = mysql_num_rows($result_all_page);
 
-//今月の更新数
+//今月の作成数
 $year = date(Y);
 $month = date(m);
 
@@ -152,7 +152,7 @@ if($goal_month < 0){
 
 					<dl class="check">
 
-						<dt>今月の更新</dt>
+						<dt>今月の作成数</dt>
 							<dd><?php print $num_month_page."ページ"."（".$goal_month_m."）"?></dd>
 
 					</dl>
