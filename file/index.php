@@ -62,7 +62,7 @@ if($_SESSION["message"]){
 
                         <dl id="inputArea">
 
-                            <dt><label for="upload_img">アップロード</label>（現在の日時でファイル名をつけます）<span class="attentionMessage">※「アップロードできるファイルは、1ファイル**KBまでです。」</span></dt>
+                            <dt><span class="attentionMessage">※「アップロードできるファイルは、1ファイル**KBまでです。」</span></dt>
                                 <dd class="upload"><input type="file" name="upload_img" id="upload_img" size="55" /></dd>
                                 <dd class="upload"><input type="submit" class="upSub" id="up" name="up" value="アップロード" /></dd>
 								<dd style="clear:both;"><a href="detail/index.php">詳細アップロード</a>（複数アップロード、ファイル名や説明の入力ができます）</dd>
