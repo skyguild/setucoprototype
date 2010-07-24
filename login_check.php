@@ -27,7 +27,7 @@ $conn = connectDB();//DB接続
 $user_name = mysql_real_escape_string(trim($user_name)); //入力されたユーザー名から余計な空白を抜く
 $user_pass = sha1(trim($user_pass)); //入力されたパスワードを
         
-$sql = "SELECT user_id,user_name FROM user "; 
+$sql = "SELECT user_id,user_name FROM user ";
 $sql .= "WHERE user_name='{$user_name}' AND user_pass='{$user_pass}'"; // SQL文でidとパスワードを持ってくる
     
 $result = mysql_query($sql);
@@ -44,7 +44,7 @@ if($num == 1){
             
 } else {
     $_SESSION["message"] = "true";
-    url_get("login.php");    
+    url_get("login.php");
 }
         
     $cls=mysql_close($conn);
