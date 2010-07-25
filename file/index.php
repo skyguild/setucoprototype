@@ -88,6 +88,23 @@ if($_SESSION["message"]){
                         </dl>
 
                     </form>
+					<form action="#" method="post" id="searchBox" style="clear:both; margin-bottom:15px;">
+
+						<div id="toggleArea">
+							<dt style="margin-top:10px;">ファイルの種類
+								<select>
+									<option value="0" selected="selected">-- 指定なし --</option>
+									<option value="1">jpg</option>
+									<option value="2">gif</option>
+									<option value="3">png</option>
+									<option value="4">pdf</option>
+								</select>
+							</dt>
+							<p style="margin-top:15px;"><input type="button" value="絞り込み" /></p>
+						</div>
+
+					</form>
+
 
                     <form action="page_edit.php" method="post" name="form" style="clear:both;">
                         <table summary="ファイル一覧の表です。編集ボタンから、ファイルの編集ができます。削除ボタンから削除ができます。サムネイルを押すとファイルを表示します。" cellpadding="0" cellspacing="0">
