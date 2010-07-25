@@ -50,13 +50,13 @@ $result = call_data($retu,$table,$rule);
 $login = $_SESSION["login"];
 
 //現在時刻
-$page_date = date("Y-m-d H:i:s");
+$page_date = date("Y-m-d H:i");
 
 ?>
 
 <?php
-	include("../../common/header.php");
-	headerArea("ページの新規作成:SetucoCMS",$row_site,$login_name);
+    include("../../common/header.php");
+    headerArea("ページの新規作成:SetucoCMS",$row_site,$login_name);
 ?>
 
                 <!-- topicPath START -->
@@ -111,80 +111,34 @@ $page_date = date("Y-m-d H:i:s");
                             <dt><label for="cat_id">カテゴリー</label></dt>
                                 <dd>
                                     <select id="cat_id" name="cat_id">
-                                        <option value="" selected="selected">カテゴリーを選択</option>
                                         <?php
                                             while($row = mysql_fetch_array($result)){
                                                 $cat_id = $row["cat_id"];
-                                                print "<option value='{$cat_id}'>{$row[1]}</option>";
+                                                print "<option value='{$cat_id}'";
+                                                if($cat_id == 0){
+                                                    print " selected='selected'";
+                                                }
+                                                print">{$row[1]}</option>";
                                             }
                                         ?>
+                                        <option value="">－新規カテゴリーの追加－</option>
                                     </select>
                                 </dd>
-
-                            <dt><label for="page_date">作成日時</label></dt>
-                                <dd class="upload"><input type="text" id="page_date" name="page_date" value="<?php print $page_date; ?>" onblur="if(this.value == '') { this.value='<?php print $page_date; ?>'; }" /></dd>
-                                <dd class="upload"><input  type="submit" class="upSub" value="時刻を更新" /></dd>
-
-                            <dt><label for="page_title">概要</label></dt>
-                                <dd><input type="text" id="page_title" name="page_title" value="<?php print $page_title_v; ?>" /></dd>
-
-                            <dt><label for="page_title">キーワード</label></dt>
-                                <dd><input type="text" id="page_title" name="page_title" value="<?php print $page_title_v; ?>" /></dd>
-
-                            <dt style="clear:both;"><label for="cat_id">タグ</label></dt>
-                                <dd class="upload">
-                                    <select id="cat_id" name="cat_id">
-                                        <option value="" selected="selected">新規タグ</option>
-                                        <option value="">タグ</option>
-                                        <option value="">タグ2</option>
-                                    </select>
-                                </dd>
-                                <dd class="upload"><input type="submit" class="upSub" id="up" name="up" value="追加" /></dd>
 
                             <dt style="clear:both;"><label for="cat_id">[必須]コンテンツ</label></dt>
-                                <dd class="upload">
-                                    <select id="cat_id" name="cat_id">
-                                        <option value="" selected="selected">コンテンツブロックを選択</option>
-                                        <option value="">大見出し</option>
-                                        <option value="">中見出し</option>
-                                        <option value="">小見出し</option>
-                                        <option value="">極小見出し</option>
-                                        <option value="">段落</option>
-                                        <option value="">段落＋右画像</option>
-                                        <option value="">段落＋左画像</option>
-                                        <option value="">箇条書きリスト</option>
-                                        <option value="">番号付きリスト</option>
-                                        <option value="">定義リスト</option>
-                                    </select>
-                                </dd>
-                                <dd class="upload"><input type="submit" class="upSub" id="up" name="up" value="挿入" /></dd>
+                                <dd><textarea id="page_text" name="page_text" cols="80" rows="10"><?php print $page_text_v; ?></textarea></dd>
 
-                            <dd class="tags" style="clear:both;"><input type="submit" class="tag" id="" name="" value="リンク" /></dd>
-                            <dd class="tags"><input type="submit" class="tag" id="" name="" value="強調" /></dd>
-                            <dd class="tags"><input type="submit" class="tag" id="" name="" value="引用" /></dd>
-                            <dd class="tags"><input type="submit" class="tag" id="" name="" value="コード" /></dd>
+                            <dt><label for="page_title">ページの概要</label></dt>
+                                <dd><input type="text" id="page_title" name="page_title" value="<?php print $page_title_v; ?>" /></dd>
 
-							<dt>大見出し　<a href="#">×</a>　<a href="#">△</a>　<a href="#">▽</a></dt>
+                            <dt style="clear:both;"><label for="cat_id">タグ</label>（複数指定する場合はカンマ「,」で区切ってください）</dt>
+                                <dd><input type="text" id="page_title" name="page_title" value="<?php print $page_title_v; ?>" /></dd>
 
-                                <dd><textarea id="page_text" name="page_text" cols="12" rows="1"><?php print $page_text_v; ?></textarea></dd>
-
-							<dt>段落　<a href="#">×</a>　<a href="#">△</a>　<a href="#">▽</a></dt>
-
-                                <dd><textarea id="page_text" name="page_text" cols="12" rows="2"><?php print $page_text_v; ?></textarea></dd>
-
-							<dt>中見出し　<a href="#">×</a>　<a href="#">△</a>　<a href="#">▽</a></dt>
-
-                                <dd><textarea id="page_text" name="page_text" cols="12" rows="1"><?php print $page_text_v; ?></textarea></dd>
-
-							<dt>段落+右画像　<a href="#">×</a>　<a href="#">△</a>　<a href="#">▽</a></dt>
-
-                                <dd><a href="#">アップロードされているファイルから選択</a></dd>
-                                <dd><input type="file" name="upload_img" id="upload_img" size="55" /></dd>
-                                <dd><textarea id="page_text" name="page_text" cols="12" rows="2"><?php print $page_text_v; ?></textarea></dd>
-
+                            <dt><label for="page_date">作成日時</label></dt>
+                                <dd><input type="text" id="page_date" name="page_date" value="<?php print $page_date; ?>" onblur="if(this.value == '') { this.value='<?php print $page_date; ?>'; }" /></dd>
                         </dl>
 
-                        <ul>
+                        <ul style="clear:both;">
                             <li class="inputAreaL"><a href="preview.php">プレビュー</a></li>
                             <li class="inputAreaL"><input type="submit" id="sub" name="sub" value="下書きで保存" /></li>
                             <li class="inputAreaL"><input type="submit" id="sub" name="sub" value="公開して保存" /></li>
