@@ -33,8 +33,8 @@ $result = call_data($retu,$table,$rule);
 ?>
 
 <?php
-	include("../common/header.php");
-	headerArea("カテゴリーの追加・編集・削除:SetucoCMS",$row_site,$login_name);
+    include("../common/header.php");
+    headerArea("カテゴリーの追加・編集・削除:SetucoCMS",$row_site,$login_name);
 ?>
 
                 <!-- topicPath START -->
@@ -73,6 +73,12 @@ $result = call_data($retu,$table,$rule);
 
                     <form action="cat_edit.php" method="post">
 
+                                    <p style="margin-bottom:10px;"><?php
+
+                                            print '<input type="text" id="cat_name" name="cat_name" value="新規カテゴリー" /><input type="submit" id="sub" name="sub" value="追加" />';
+
+                                    ?></p>
+
                         <table summary="カテゴリー一覧の表です。カテゴリーの追加・編集・削除ができます。" cellpadding="0" cellspacing="0">
 
                             <thead>
@@ -97,13 +103,11 @@ $result = call_data($retu,$table,$rule);
                                         $cat_id = $row["cat_id"];
                                         $cat_name = $row["cat_name"];
 
-                                        if($row["cat_parent_id"]==NULL){
-
                                             //偶数の場合は、checkGをつけてCSSで背景色を変える
                                             $i++;
 
                                             if($i%2 == 0){
-                                                print "<tr class='checkG'>\n";
+                                                print "<tr class='checkG'>\n";;
                                             } else {
                                                 print "<tr>\n";
                                             }
@@ -144,85 +148,14 @@ $result = call_data($retu,$table,$rule);
 
                                                 print "<td><a href='#' onclick='flg({$cat_id});'><img src='../images/btn_delete.png' alt='削除' widrh='27' height='27' /></a></td>";
 
+                                            } else {
+                                                print "<td>&nbsp;</td>";
                                             }
 
                                             print "</tr>\r";
-
-                                        }
-
-                                        //このカテゴリーを親に持つカテゴリーを取得
-                                        $retu_pa = "*";
-                                        $table_pa = "category";
-                                        $rule_pa = " WHERE cat_parent_id='{$cat_id}'";
-
-                                        $result_pa = call_data($retu_pa,$table_pa,$rule_pa);
-
-                                        //カテゴリーの数だtrを繰り返す
-                                        while($row_pa = mysql_fetch_array($result_pa)){
-
-                                            //取得したデータを変数に入れておく
-                                            $cat_id = $row_pa["cat_id"];
-                                            $cat_name = $row_pa["cat_name"];
-
-                                            //偶数の場合は、checkGをつけてCSSで背景色を変える
-                                            $i++;
-
-                                            if($i%2 == 0){
-                                                print "<tr class='checkG'>\n";
-                                            } else {
-                                                print "<tr>\n";
-                                            }
-
-                                            print "<td>";
-
-                                            //編集ボタンが押されたときの処理
-                                            if(isset($_GET["edit"])&&$cat_id==$_GET["edit"]){
-
-                                                $edit_no = $_GET["edit"];
-
-                                                print "<input type='text' id='cat_new' name='cat_new' value='{$cat_name}' />";
-                                                print '<input type="submit" id="sub" name="sub" value="保存" />';
-                                                print '<input type="submit" id="sub" name="sub" value="キャンセル" />';
-
-                                            } else {
-
-                                                print $cat_name;
-
-                                            }
-
-                                            print "</td>";
-
-                                            print "<td>";
-                                            print "<a href='index.php?edit={$cat_id}'><img src='../images/btn_edit.png' alt='編集' widrh='27' height='27' /></a>";
-                                            print "</td>";
-
-
-                                            print "<input type='hidden' id='cat_id' name='cat_id' value='{$cat_id}' />";
-                                            print "<input type='hidden' id='cat_no' name='cat_no' value='{$edit_no}' />";
-
-                                            print "<td><a href='#' onclick='flg({$cat_id});'><img src='../images/btn_delete.png' alt='削除' widrh='27' height='27' /></a></td>";
-
-                                        }
-
                                     }
 
                                 ?>
-
-
-
-                                <tr>
-
-                                    <td colspan="3">
-
-                                    <?php
-
-                                            print '<input type="text" id="cat_name" name="cat_name" value="新規カテゴリー" /><input type="submit" id="sub" name="sub" value="追加" />';
-
-                                    ?>
-
-                                    </td>
-
-                                </tr>
 
                             </tbody>
 
@@ -230,17 +163,17 @@ $result = call_data($retu,$table,$rule);
 
                     </form>
 
-					<div id="pageNav">
-						<ul>
-							<li><a href="#">前へ</a></li>
-							<li class="navNumber"><a href="#">1</a></li>
-							<li class="navNumber current"><a href="#">2</a></li>
-							<li class="navNumber"><a href="#">3</a></li>
-							<li class="navNumber"><a href="#">4</a></li>
-							<li class="navNumber"><a href="#">5</a></li>
-							<li><a href="#">次へ</a></li>
-						</ul>
-					</div>
+                    <div id="pageNav">
+                        <ul>
+                            <li><a href="#">前へ</a></li>
+                            <li class="navNumber"><a href="#">1</a></li>
+                            <li class="navNumber current"><a href="#">2</a></li>
+                            <li class="navNumber"><a href="#">3</a></li>
+                            <li class="navNumber"><a href="#">4</a></li>
+                            <li class="navNumber"><a href="#">5</a></li>
+                            <li><a href="#">次へ</a></li>
+                        </ul>
+                    </div>
 
                 </div>
                 <!-- section END -->
