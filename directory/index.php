@@ -41,20 +41,20 @@ $row_site = site_data();
                         </div>
 
                     </div>
-					
+
 
 <div style="margin-left:15px;">
-					
+
 				<p><a id="plus" href="#" onclick="toggle(1);">+</a><a id="minuse" style="display:none;" href="#" onclick="toggle(0);">-</a>　トップ <a href="all.php">（43）</a></p>
 				<div id="toggleArea" style="display:none;">
 				<p>　<a href="">-</a>　└サブカテゴリー1 <a href="all.php">（20）</a></p>
 				<p>　　<a href="">+</a>　└サブカテゴリー1-1 <a href="all.php">（15）</a></p>
 				<p>　　<a href="">-</a>　└サブカテゴリー1-2 <a href="all.php">（5）</a></p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">今日は電設部の勉強会</a> </p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">ガンブラー対策について</a> </p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">語る夕べ～先生、彼らは誰ですか？～</a> </p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">電設部とは</a> </p>
-				<p>　　　　　└<a href="../page/edit/index.php?page_id=63">技能五輪全国大会レポート</a> </p>
+				<p>　　　　　└今日は電設部の勉強会</a> <a href="../penguin/page.php?page_id=63" target="_blank">表示</a> <a href="../page/edit/index.php?page_id=63">編集</a></p>
+				<p>　　　　　└ガンブラー対策について</a> <a href="../penguin/page.php?page_id=63" target="_blank">表示</a> <a href="../page/edit/index.php?page_id=63">編集</a></p>
+				<p>　　　　　└語る夕べ～先生、彼らは誰ですか？～</a> <a href="../penguin/page.php?page_id=63" target="_blank">表示</a> <a href="../page/edit/index.php?page_id=63">編集</a></p>
+				<p>　　　　　└電設部とは</a> <a href="../penguin/page.php?page_id=63" target="_blank">表示</a> <a href="../page/edit/index.php?page_id=63">編集</a></p>
+				<p>　　　　　└技能五輪全国大会レポート</a> <a href="../penguin/page.php?page_id=63" target="_blank">表示</a> <a href="../page/edit/index.php?page_id=63">編集</a></p>
 				<p>　<a href="">+</a>　└サブカテゴリー2 <a href="all.php">（23）</a></p>
 				</div>
 </div>
