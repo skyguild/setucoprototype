@@ -65,8 +65,7 @@ echo <<<Main
 
                         <div class="entryHead">
 
-
-                            <h2><span>「キーワード」の検索結果（5件）</span></h2>
+                            <h2><span>「キーワード」の検索結果（24件）</span></h2>
 
                         </div>
 
@@ -79,10 +78,26 @@ echo <<<Main
                             <tr><td><a href="page.php?page_id=39">「技能五輪全国大会レポート」</a></td><td>勉強会プロジェクトでは、Webデザ…　（2009年10月24日）</td></tr>
                             <tr><td><a href="page.php?page_id=39">「技能五輪全国大会レポート」</a></td><td>勉強会プロジェクトでは、Webデザ…　（2009年10月24日）</td></tr>
                             <tr><td><a href="page.php?page_id=39">「技能五輪全国大会レポート」</a></td><td>勉強会プロジェクトでは、Webデザ…　（2009年10月24日）</td></tr>
+                            <tr><td><a href="page.php?page_id=39">「技能五輪全国大会レポート」</a></td><td>勉強会プロジェクトでは、Webデザ…　（2009年10月24日）</td></tr>
+                            <tr><td><a href="page.php?page_id=39">「技能五輪全国大会レポート」</a></td><td>勉強会プロジェクトでは、Webデザ…　（2009年10月24日）</td></tr>
+                            <tr><td><a href="page.php?page_id=39">「技能五輪全国大会レポート」</a></td><td>勉強会プロジェクトでは、Webデザ…　（2009年10月24日）</td></tr>
+                            <tr><td><a href="page.php?page_id=39">「技能五輪全国大会レポート」</a></td><td>勉強会プロジェクトでは、Webデザ…　（2009年10月24日）</td></tr>
+                            <tr><td><a href="page.php?page_id=39">「技能五輪全国大会レポート」</a></td><td>勉強会プロジェクトでは、Webデザ…　（2009年10月24日）</td></tr>
                         </table>
 
-                        <p class="backTop"><a href="#wrapper">ページの先頭に戻る</a></p>
+                        <div id="pageNav">
+                            <ul>
+                                <li><a href="#">前へ</a></li>
+                                <li class="navNumber"><a href="#">1</a></li>
+                                <li class="navNumber current"><a href="#">2</a></li>
+                                <li class="navNumber"><a href="#">3</a></li>
+                                <li class="navNumber"><a href="#">4</a></li>
+                                <li class="navNumber"><a href="#">5</a></li>
+                                <li><a href="#">次へ</a></li>
+                            </ul>
+                        </div>
 
+                        <p class="backTop"><a href="#wrapper">ページの先頭に戻る</a></p>
 
                     </div>
                     <!-- entry END -->

@@ -26,15 +26,6 @@ echo <<<Main
                     <p>{$site_description}</p>
                 </div>
 
-                <!--
-                <div id="utility">
-                    <ul>
-                        <li><a href="#">お問い合わせ</a></li>
-                        <li id="RSS"><a href="#" tabindex="4">RSSフィード</a></li>
-                    </ul>
-                </div>
-                -->
-
                 <form action="" method="post" style="margin-top:40px;">
 
                     <dl>
@@ -68,7 +59,7 @@ Main;
 
                         <div class="entryHead">
 
-                            <h2>フリースペース</h2>
+                            <h2><span>フリースペース</span></h2>
 
                         </div>
 
@@ -86,7 +77,7 @@ Main;
 
                         <div class="entryHead">
 
-                            <h2>新着ページ</h2>
+                            <h2><span>新着ページ（10件）</span></h2>
 
                         </div>
 
