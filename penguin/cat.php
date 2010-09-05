@@ -77,11 +77,7 @@ echo <<<Main
                         <dl class="category">
 
                             <dt>カテゴリー：</dt>
-                                <dd>report</dd>
-
-                            <dt>投稿者：</dt>
-
-                                <dd>benkyokai</dd>
+                                <dd><a href="cat.php">report</a></dd>
 
                         </dl>
 
@@ -115,11 +111,7 @@ echo <<<Main
                         <dl class="category">
 
                             <dt>カテゴリー：</dt>
-                                <dd>report</dd>
-
-                            <dt>投稿者：</dt>
-
-                                <dd>benkyokai</dd>
+                                <dd><a href="cat.php">report</a></dd>
 
                         </dl>
 
@@ -153,11 +145,7 @@ echo <<<Main
                         <dl class="category">
 
                             <dt>カテゴリー：</dt>
-                                <dd>report</dd>
-
-                            <dt>投稿者：</dt>
-
-                                <dd>benkyokai</dd>
+                                <dd><a href="cat.php">report</a></dd>
 
                         </dl>
 
@@ -191,11 +179,7 @@ echo <<<Main
                         <dl class="category">
 
                             <dt>カテゴリー：</dt>
-                                <dd>report</dd>
-
-                            <dt>投稿者：</dt>
-
-                                <dd>benkyokai</dd>
+                                <dd><a href="cat.php">report</a></dd>
 
                         </dl>
 
@@ -229,11 +213,7 @@ echo <<<Main
                         <dl class="category">
 
                             <dt>カテゴリー：</dt>
-                                <dd>report</dd>
-
-                            <dt>投稿者：</dt>
-
-                                <dd>benkyokai</dd>
+                                <dd><a href="cat.php">report</a></dd>
 
                         </dl>
 
@@ -256,7 +236,7 @@ echo <<<Main
                         <ul>
                             <li><a href="#">前へ</a></li>
                             <li class="navNumber"><a href="#">1</a></li>
-                            <li class="navNumber current"><a href="#">2</a></li>
+                            <li class="navNumber current"><span>2</span></li>
                             <li class="navNumber"><a href="#">3</a></li>
                             <li class="navNumber"><a href="#">4</a></li>
                             <li class="navNumber"><a href="#">5</a></li>

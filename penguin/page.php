@@ -112,10 +112,7 @@ Main;
                         <dl class="category">
 
                             <dt>カテゴリー：</dt>
-                                <dd>{$page_cat}</dd>
-
-                            <dt>投稿者：</dt>
-                                <dd>{$page_user}</dd>
+                                <dd><a href="cat.php">{$page_cat}</a></dd>
 
                         </dl>
 
@@ -123,9 +120,13 @@ Main;
 
                             {$page_text}
 
-                            {$page_next}
-
                         </div>
+
+                        <dl class="pageInfo">
+                            <dt>タグ：</dt>
+                                <dd><a href="tag.php">タグ1</a></dd>
+                                <dd><a href="tag.php">タグ2</a></dd>
+                        </dl>
 
                         <p class="backTop"><a href="#wrapper">ページの先頭に戻る</a></p>
 
